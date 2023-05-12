@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter+Tight:ital,wght@0,400;0,600;0,700;1,600&display=swap');
+
+:root {
+    --brown: #663E24;
+    --yolkyellow: #FEAF38;
+    --cream: #FFF9F1;
+    --lightbrown: #C69677;
+    --midtonegrey: #656464;
+    --regulargrey: #A3A3A3;
+    --lightgrey: #E0E0E0;
+    --pitchblack: #000000;
+    --white: #FFFFFF;
+    --softred: #EB4335;
+    font-size: 24px;
+}
+
+body{
+
+    font-family: 'Crete Round', serif;
+    background-color: var(--cream);
+    color: var(--brown);
+    margin: 0px;
+}
+
+/*header*/
+
+header {
+    background-color: var(--brown);
+    padding: 12px;
+}
+
+header nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+header nav li {
+    list-style: none;
+}
+
+.logo {
+    position: absolute;
+    display:flex;
+    margin-left: -1em;
+    margin-top: .7em;
+
+    font-family:'Crete Round', serif;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46px;
+    color: var(--cream);
+}
+
+header nav menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+    margin-left: 4em;
+}
+
+header nav menu button {
+    background-color: transparent;
+    border: none;
+    color: var(--cream);
+    font-size: 24px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+}
+
+header nav menu button+menu {
+    position: absolute;
+    z-index: 1;
+    background-color: var(--brown);
+    padding: 10px;
+    border-radius: 1px;
+    display: none;
+    width: fit-content;
+    margin-right: 4rem;
+}
+
+header nav menu button+menu li {
+    padding-top: 5px; 
+}
+
+@media (min-width: 1181px) {
+header nav menu li:hover>menu {
+    display:block;
+}
+
+}
+
+header nav menu li:hover .menu-btn {
+    color: var(--yolkyellow);
+}
+
+header nav menu li .menu-btn:after {
+    content: url('../imgs/icons/chevron.svg');
+    padding-left: 10px;
+}
+
+header nav menu li:hover .menu-btn:after {
+    content: url('../imgs/icons/chevron-hover.svg');
+    padding-left: 10px;
+}
+
+@media (max-width: 1180px) {
+    header {
+        padding: 0px;
+        background-color: var(--brown);
+    }
+}
+
+
+.search {
+    width: 260%;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: none;
+    border-right: none;
+    padding: 10px 10px 10px 20px;
+    height: 20px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+::placeholder {
+    color: var(--regulargrey);
+    opacity: 0.5;
+}
+:placeholder-shown {
+    font-family: 'Inter-Tight', sans-serif;
+    font-size: 16px;
+    font-weight: 580;
+    line-height: 24px;
+}
+
+.searchTerm:focus {
+    color: var(--brown);
+    font-family: 'Inter-Tight', sans-serif;
+    font-size: 16px;
+    font-weight: 580;
+    line-height: 24px;
+}
+
+.searchButton {
+    width: 60px;
+    height: 40px;
+    border: 1px solid var(--yolkyellow);
+    background: var(--yolkyellow);
+    text-align: center;
+    color: var(--white);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+    background-image: url('../imgs/icons/search-bar.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Login button*/
+.button-login {
+    margin-left: 22em;
+    background-color: var(--cream);
+    padding: 6px 20px 4px 20px;
+    border-radius: 5px;
+
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--brown);
+    text-decoration: none;
+    cursor:pointer;
+    
+}
+
+.button-login:before {
+    content: url('../imgs/icons/login-icon.svg');
+    display:inline-block;
+    padding-right:15px;
+}
+
+/*Sign Up button*/
+.button-signup {
+    background-color: transparent;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+    border: solid;
+    border-width: 2px;
+    border-color: var(--cream);
+
+
+    font-family: 'Inter-Tight', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--cream);
+    text-decoration: none;
+    cursor:pointer;
+
+}
+/*end of header*/
+
+/*top portion of homepage*/
+
+/*Your reading journey awaits.*/
+.book-background .left-center h1 {
+    position: absolute;
+    height: 302px;
+    left: 78px;
+    top: 116px;
+
+    width: 578px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+
+    font-family:'Crete Round', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 82px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--cream);
+}
+
+/*Keep track of your readings, reviews, and the latest book talk with clubs*/
+.large-text { 
+    position: absolute;
+    height: 62px;
+    left: 164px;
+    top: 360px;
+
+    width: 406px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+
+    font-family:'Inter Tight', sans-serif;
+    font-style: semibold;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--cream);
+    margin-top: 2rem;
+
+}
+
+/* Sign Up button*/
+.left-center .button-group .button-secondary {
+    position: absolute;
+    width: 138px;
+    height: 43px;
+    left: 288px;
+    top: 444px;
+}
+
+.button-group span {
+    position: absolute;
+    margin-top: 2rem;
+
+    background-color: var(--cream);
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--brown);
+    text-decoration: none;
+}
+
+/*home book background img*/
+.book-background {
+    width:100%;
+    height:500px;
+    background-image: url("../imgs/imgs-books/homepage-background-books.png");
+    background-size: cover;
+    background-position: center;
+
+}
+
+/*Already have an account?*/
+.text-group .large-text {
+    position: absolute;
+    width: 255px;
+    height: 62px;
+    left: 199x;
+    top: 499px;
+
+    margin-left: 1.8rem;
+
+}
+
+/*Login underlined button*/
+.text-group .button-primary span {
+    position: absolute;
+    width: 71px;
+    height: 62px;
+    left: 453px;
+    top: 499px;
+
+    font-family:'Inter Tight', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: var(--yolkyellow);
+
+    margin-top: 1.95rem;
+    margin-left: -0.5rem;
+
+}
+
+/*end top portion of homepage*/
+
+/*Trending Books A.T.M.*/
+h2 {
+  font-family: 'Crete Round', serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 61px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-container { 
+    display: grid;
+    place-items: center;
+    text-align: center;
+
+
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 72px;
+    grid-row-gap: 0px;
+}
+
+
+.book-1 { grid-area: 1/1/4/2;}
+.book-2 { grid-area: 1/2/4/3;}
+.book-3 { grid-area: 1/3/4/4;}
+.book-4 { grid-area: 1/4/2/5;}
+
+h3 {
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25.52px;
+    text-align: center;
+    margin: 0px;
+    
+}
+
+article{
+    margin-bottom: 3.5rem;
+}
+.book-container span {
+    font-family: 'Inter-Tight', sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+    
+}
+/*End of Trending Books A.T.M*/
+
+/*start of Find Your People!*/
+
+/*start of Share the Books section */
+
+/*Share the Books You've Read & Your Ratings!*/
+.share h1 {
+    width: 578px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    margin-left: 3rem;
+
+    font-family: 'Crete Round', serif;
+    font-style: normal;
+    font-size: 48px;
+    font-weight: 400px;
+    line-height: 61px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--brown);
+}
+
+.large-text-2 {
+    width: 500px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+
+    margin-left: 4rem;
+    margin-top: -1rem;
+    font-family: 'Inter-Tight', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--brown);
+}
+
+.start-shelving .button-secondary {
+    background-color: var(--yolkyellow);
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--brown);
+    text-decoration: none;
+
+    align-items: center;
+    margin-left: 11rem;
+}
+
+.book-container-2 {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 37rem;
+    margin-bottom: 3rem;
+    margin-top: -13rem;
+
+    grid-template-columns: fit-content;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: -40px;
+    grid-row-gap: 5px;
+    grid-area: content;
+
+
+}
+
+.book-share1 { grid-area: 1/1/2/2; }
+.book-share2 { grid-area: 1/2/2/3; }
+.book-share3 { grid-area: 1/3/2/4; }
+.book-share4 { grid-area: 2/1/3/2; }
+.book-share5 { grid-area: 2/2/3/3; }
+.book-share6 { grid-area: 2/3/3/4; }
+
+.img1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 2rem;
+}
+
+.img2 {
+    position: relative;
+    top: 5.5px;
+    left: .70rem;
+    margin-bottom: -1rem;
+    margin-left: -.20rem;
+    margin-right: 6rem;
+}
+/*start Footer*/
+footer {
+    background-color: var(--brown);
+    color: var(--cream);
+}
+
+footer nav menu h3 {
+    position: absolute;
+    width: 129px;
+    height: 41px;
+
+    font-family: 'Inter-Tight', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+footer nav {
+    width: 80%;
+    margin: auto;
+    padding: 30px 0px;
+}
+
+footer nav li {
+    font-family: 'Inter-Tight', sans-serif;
+    font-size: 16px;
+    list-style: none;
+    margin-bottom: 10px;
+    color: var(--cream);
+}
+a {
+    color: var(--cream);
+    font-family: 'Inter-Tight', sans-serif;
+    text-decoration-line: none;
+}
+
+footer nav>menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: top;
+}
+
+footer nav>menu li menu {
+    padding: -1.5px;
+    color: black;
+}
+
+footer p {
+     font-size: 14px;
+     text-align: center;
+     margin: 0px;
+     padding-bottom: 10px;
+}
+
+@media (max-width: 1180px) {
+    footer nav menu li:first-child div {
+        justify-content: flex-start;
+    }
+
+    footer nav menu li:first-child div a {
+        margin-right: 20px;
+    }
+}

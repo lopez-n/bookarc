@@ -1,12 +1,224 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device=width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        hello world!
-    </body>
-    </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Book Arc</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Descripton" content="">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="shortcut icon" href="assets/imgs/icons/book.svg" type="img/svg" />
+
+</head>
+<body>
+    <header>
+
+        <!--starting naviagation-->
+        <nav>
+
+            <div class="flex-header">
+                <a class="logo" href="/">Book Arc</a>
+            </div>
+            <menu class="dropdown-menu">
+            <li>
+                <button class="menu-btn">About</button>
+                <menu class="menu-content">
+                    <li><a class="link-hidden" href="/about/what-is-book-arc?.html">What is Book Arc?</a></li>
+                    <li><a class="link-hidden" href="/about/contact.html">Contact</a></li>
+                    <li><a class="link-hidden" href="/about/faq.html">FAQ</a></li>
+                </menu>
+            </li>
+            <li>
+                <button class="menu-btn">Books</button>
+                <menu class="menu-content">
+                    <li><a class="link-hidden" href="/books/thriller.html">Thriller</a></li>
+                    <li><a class="link-hidden" href="/books/romance.html">Romance</a></li>
+                    <li><a class="link-hidden" href="/books/mystery.html">Mystery</a></li>
+                    <li><a class="link-hidden" href="/books/more.html">More...</a></li>
+                </menu>
+            </li>
+            <li>
+                <button class="menu-btn">Clubs</button>
+                <menu class="menu-content">
+                    <li><a class="link-hidden" href="/community/create-a-club.html">Create a Club</a></li>
+                    <li><a class="link-hidden" href="/community/join-a-club.html">Join a Club</a></li>
+                    <li><a class="link-hidden" href="/community/my-clubs.html">My Clubs</a></li>
+                </menu>
+            </li>
+            <li>
+                <div class="wrap">
+                    <div class= "search">
+                        <input type="text" class="searchTerm"
+                        placeholder="Search Books, People, Clubs...">
+                        <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li><a class="button-login" href="login/login.html">Login</a></li>
+            <li><a class="button-signup" href="signup/sign-up.html">Sign Up</a></li>
+            </menu>
+
+        
+        </nav>
+
+        <!--ending navigation-->
+
+    </header>
+    <main>
+
+        <!--starting homepage content-->
+
+        
+            <section class="flex top">
+                <div class="book-background">
+                    <div class="left-center">
+                        <h1>Your reading journey awaits.</h1>
+                        <p class="large-text">
+                        Keep track of your readings, reviews, and the latest book talk with clubs!
+                        </p>
+                        <div class="button-group">
+                        <a class="button-secondary" href="signup/sign-up.html"><span>Sign Up</span></a>
+                        </div>
+                        <div class="text-group">
+                            <p class="large-text">
+                            Already have an account? 
+                            </p>
+                        <a class="button-primary" href="login/login.html"><span>Login</span></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+        <div class="container"> 
+
+            <!--start trending books atm section-->
+
+            <section>
+                <div class="flex">
+                    <h2>Trending Books A.T.M</h2>
+                </div>
+                <div class="book-container">
+                    <article class="book-1">
+                        <img src="assets/imgs/imgs-books/a flicker in the dark 1.jpg">
+                        <h3>A Flicker in the Dark</h3>
+                        <span>by Stacy Willingham</span>
+                    </article>
+                    <article class="book-2">
+                        <img src="assets/imgs/imgs-books/a court of thorns and roses 1.jpg">
+                        <h3>A Court of Thorns an...</h3>
+                        <span>by Sarah J. Maas</span>
+                    </article>
+                    <article class="book-3">
+                        <img src="assets/imgs/imgs-books/the song of achilles 1.jpg">
+                        <h3>The Song of Achilles</h3>
+                        <span>by Madeline Miller</span>
+                    </article>
+                    <article class="book-4">
+                        <img src="assets/imgs/imgs-books/where the crawdads sing 1.jpg">
+                        <h3>Where the Crawdads...</h3>
+                        <span>by Della Owens</span>
+                    </article>
+                </div>
+            </section>
+
+            <!--end trending books atm section-->
+
+            <!--start find your people section-->
+
+           
+            <!--start share the books section-->
+            <div>
+            <section>
+                    <section class="flex top">
+                        <div class="share">
+                            <h1>Share the Books You've Read & Your Ratings!</h1>
+                            <p class="large-text-2">
+                                Create an account on our website or download our mobile Book Arc app!
+                            </p>
+                            <div class="start-shelving">
+                                <a class="button-secondary" href="signup/sign-up.html"><span>Start Shelving!</span></a>
+                            </div>
+                        </div>
+                <div class="book-container-2">
+                    <div class="book-share1">
+                        <img class="img1" src="assets/imgs/imgs-books/it ends with us 1.jpg">
+                        <img class="img2" src="assets/imgs/icons/4.5stars-1.svg">
+                    </div>
+                    <div class="book-share2">
+                        <img class="img1" src="assets/imgs/imgs-books/ordinary grace 1.jpg">
+                        <img class="img2" src="assets/imgs/icons/4.5stars-1.svg">
+                    </div>
+                    <div class="book-share3">
+                        <img class="img1" src="assets/imgs/imgs-books/malibu rising 1.jpg">
+                        <img class="img2" src="assets/imgs/icons/4.5stars-1.svg">
+                    </div>
+                    <div class="book-share4">
+                        <img class="img1" src="assets/imgs/imgs-books/the furrows 1.jpg">
+                        <img class="img2" src="assets/imgs/icons/4.5stars-1.svg">
+                    </div>
+                    <div class="book-share5">
+                        <img class="img1" src="assets/imgs/imgs-books/crying in h mart 1.jpg">
+                        <img class="img2" src="assets/imgs/icons/4.5stars-1.svg">
+                    </div>
+                    <div class="book-share6">
+                        <img class="img1" src="assets/imgs/imgs-books/these violent delights 1.jpg">
+                        <img class="img2" src="assets/imgs/icons/4.5stars-1.svg">
+                    </div>
+                </div>
+            </section>
+            <!--end share the books section-->
+
+            </div>
+        </div>
+        <!--end container-->
+    </main>
+    <!--end main content-->
+
+    <!--start footer-->
+    <footer>
+        <nav>
+
+            <menu>
+                <li>
+                    <h2>Book Arc</h2>
+                    <div class="flex">
+                        <a href=""><img src="assets/imgs/icons/instagram.svg"></a>
+                        <a href=""><img src="assets/imgs/icons/twitter.svg"></a>
+                    </div>
+                </li>
+                <li>
+                    <h3>ABOUT</h3>
+                    <menu>
+                        <li><a href="">What is Book Arc?</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </menu>
+                </li>
+                <li>
+                    <h3>BOOKS</h3>
+                    <menu>
+                        <li><a href="">Thriller</a></li>
+                        <li><a href="">Romance</a></li>
+                        <li><a href="">Mystery</a></li>
+                        <li><a href="">More...</a></li>
+                    </menu>
+                </li>
+                <li>
+                    <h3>COMMUNITY</h3>
+                    <menu>
+                        <li><a href="">Create a Club</a></li>
+                        <li><a href="">Join a Club</a></li>
+                        <li><a href="">My Clubs</a></li>
+                    </menu>
+                </li>
+            </menu>
+        </nav>
+        <p>Copyright 2023 All Rights Reserved • Privacy Policy</p>
+    </footer>
+    <!--end footer-->
+</body>
+</html>
